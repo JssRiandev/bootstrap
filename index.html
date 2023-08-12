@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Nome da página</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> <!-- Adicionando um botão de "Menu hambúrguer" -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">Sobre a página</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filmes-Séries">Filmes e Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jogos">Jogos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#animes">Animes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <!-- fazendo o navegador "espionar" o scrool para saber em qual id está e mudar a seleção no menu do topo -->
+    <div class="container">
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="sobre">
+                <h2>Sobre a página</h2>
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="https://www.xtrafondos.com/en/descargar.php?id=4686&resolucion=2560x1440" alt="Daenerys targaryen banner" />
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://cdn2.steamgriddb.com/file/sgdb-cdn/hero/447b0408b80078338810051bb38b177f.png" alt="Red dead Redemption banner"/>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="https://gcs.yyanime.com/uploads/2021/01/shop-by-anime-top-banner-Dragon-Ball-.jpg" alt="Dragon ball banner"/>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta totam atque optio tempore sapiente iusto quis maxime quidem earum libero. Animi reiciendis deserunt, impedit natus voluptas nulla sint nam mollitia?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur sapiente dolorem officia, odio obcaecati dicta, nihil tempore aliquid maiores porro iste excepturi quod repellendus eum! Ipsa nihil adipisci corrupti. Voluptatibus.
+                </p>
+            </section>
+            <section id="filmes-Séries">
+                <h2>Filmes e séries</h2>
+                <div class="post">
+                    <article class="card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" alt=""> <!-- Selecionando a imagem do card -->
+                            <div class="card-body">
+                                <h4 class="card-title">Título do Card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                                </p>
+                                <a href="#" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>    
+                    </article>
+                    <article class="card">
+                        <img src="https://br.web.img3.acsta.net/medias/nmedia/18/92/91/32/20224832.jpg" alt=""> <!-- Selecionando a imagem do card -->
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                        </p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                    </article>
+                    <article class="card ultimo">
+                        <img src="https://br.web.img2.acsta.net/medias/nmedia/18/93/88/04/20282944.jpg" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="jogos">
+                <h2>Jogos</h2>
+                <div class="post">
+                    <article class="card">
+                        <img src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>    
+                    </article>
+                    <article class="card">
+                        <img src="https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </article>
+                    <article class="card ultimo">
+                        <img src="https://image.api.playstation.com/cdn/UP1018/CUSA01764_00/daExAVIqaWz8NNeqTaFW2IcweYzqt4d8.png" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="animes">
+                <h2>Animes</h2>
+                <div class="post">
+                    <article class="card">
+                        <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/35e4ac6339f5fdcc164160a5755790cd.jpe" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpe" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>    
+                    </article>
+                    <article class="card">
+                        <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                    <article class="card ultimo">
+                        <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/13a04677667fcf9d0ba4bf144c2dcb8d.jpe" alt=""> <!-- Selecionando a imagem do card -->
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perferendis, expedita ipsa assumenda nihil esse natus necessitatibus nam aperiam quasi, velit rerum ullam cumque illo aliquam eveniet numquam! Eaque, est.
+                            </p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
